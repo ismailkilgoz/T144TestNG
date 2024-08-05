@@ -8,7 +8,7 @@ import utilities.Driver;
 public class C04_PageClassiKullanma {
 
 
-    @Test
+    @Test(groups = {"smoke,E2E 1"})
     public void test01() {
     Driver.getDriver().get("https://www.testotomasyonu.com/");
 
@@ -26,6 +26,8 @@ public class C04_PageClassiKullanma {
         String actualIsim = testOtomasyonuPage.ilkUrunSayfasiIsimElementi
                 .getText()
                 .toLowerCase();
-    }
 
+
+        Driver.quitDriver();
+    }
 }
