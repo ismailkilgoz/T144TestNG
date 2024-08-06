@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Cross browser testler">
+    <test name="Chrome ile calisacak testler">
+        <parameter name="calisacakBrowser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.day17_CrossbrowserCalisacakTestler.C01_CrossbrowserAramaTesti"></class>
+            <class name="tests.day17_CrossbrowserCalisacakTestler.C02_CrossbrowserPozitifLoginTesti"></class>
+        </classes>
+    </test>
+    
+    <test name="Firefox ile calisacak testler">
+        <parameter name="calisacakBrowser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.day17_CrossbrowserCalisacakTestler.C01_CrossbrowserAramaTesti"></class>
+            <class name="tests.day17_CrossbrowserCalisacakTestler.C02_CrossbrowserPozitifLoginTesti"></class>
+        </classes>
+    </test>
+</suite>
